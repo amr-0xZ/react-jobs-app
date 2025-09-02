@@ -1,12 +1,66 @@
-# React + Vite
+# React Jobs
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern job listing web application built with **React**, **Vite**, **Tailwind CSS** and **Json server**.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Browse all job listings
+- Add new job postings
+- Edit and delete jobs
+- View recent jobs on the homepage
+- Responsive design
+- Fast development with Vite and HMR
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [React Router](https://reactrouter.com/)
+
+## Getting Started
+
+1. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+2. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+
+3. **Open in browser:**
+   Visit [http://localhost:3000](http://localhost:3000)
+
+## Project Structure
+
+- `src/components` – Reusable UI components (Navbar, Job, JobListing, etc.)
+- `src/pages` – Application pages (Home, AddJobPage, EditJobPage, JobPage)
+- `src/assets` – Images and static assets
+
+## API
+
+The app expects a backend API running at `http://localhost:8000` with endpoints like:
+
+- `GET /api/jobs` – List jobs
+- `POST /api/jobs` – Add job
+- `PUT /api/jobs/:id` – Edit job
+- `DELETE /api/jobs/:id` – Delete job
+
+you can use a mockup json server on the `src/jobs.json` file, i added the right data to it and configured the script :
+**run mockup json server:**
+   ```bash
+   npm run server
+   ```
+
+## Customization
+
+- Update Tailwind styles in `tailwind.config.js`
+- Change API endpoints in `vite.config.js` if needed
+
+## License
+
+MIT
+
+---
