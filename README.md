@@ -49,6 +49,7 @@ The app expects a backend API running at `http://localhost:8000` with endpoints 
 - `DELETE /api/jobs/:id` – Delete job
 
 you can use a mockup json server on the `src/jobs.json` file, i added the right data to it and configured the script :
+
 **run mockup json server:**
    ```bash
    npm run server
@@ -58,9 +59,5 @@ you can use a mockup json server on the `src/jobs.json` file, i added the right 
 
 - Update Tailwind styles in `tailwind.config.js`
 - Change API endpoints in `vite.config.js` if needed
-
-## License
-
-MIT
 
 ---
